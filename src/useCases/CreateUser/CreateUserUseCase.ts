@@ -1,4 +1,4 @@
-import { User, UserAttributes, UserModel } from "../../models/IUser";
+import { UserAttributes, UserModel } from "../../models/IUser";
 import { IUserRepository } from "../../repositories/IUserRepository";
 import { ICreateUserRequestDTO } from "./CreateUserDTO";
 
@@ -8,14 +8,14 @@ export class CreateUserUseCase {
     ) {}
 
     async execute(data: ICreateUserRequestDTO): Promise<UserModel> {
-        const { email, password, name, phone } = data;
+        const { email, password, name, phone, address } = data;
         const userAlreadyExists = await this.userRepository.findByEmail(email);
     
         if (userAlreadyExists) {
             throw new Error('User already exists.');
         }
 
-        const user: UserAttributes =  { email, phone, name, password };
+        const user: UserAttributes =  { email, phone, name, password, address };
 
         return await this.userRepository.save(user);
     }

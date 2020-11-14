@@ -1,29 +1,43 @@
-import { DataTypes, Model, ModelAttributes } from 'sequelize';
-import { AddressAttributes } from "../models/IAddress";
+import { DataTypes, ModelAttributes, Sequelize } from 'sequelize';
+import { AddressAttributes, AddressStatic } from '../models/IAddress';
 
-export class Address extends Model<AddressAttributes> implements AddressAttributes {
-    public userId: number;
-    public street: string;
-    public number: string;
-    public complement?: string;
-    public district: string;
-    public zipCode: string;
-    public city: string;
-    public state: string;
-
-    public readonly createdAt!: Date;
-    public readonly updatedAt!: Date;
+export function AddressFactory (sequelize: Sequelize): AddressStatic {
+    return<AddressStatic> sequelize.define('addresses', attributes , options);
 }
 
-const addressAttributes: ModelAttributes<Address, AddressAttributes> = {
-    city: DataTypes.STRING,
-    district: DataTypes.STRING,
-    number: DataTypes.STRING,
-    state: DataTypes.STRING,
-    street: DataTypes.STRING,
-    userId: DataTypes.STRING,
-    zipCode: DataTypes.STRING,
-    complement: DataTypes.STRING,
-}
+const attributes: ModelAttributes = {
+    id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+    },
+    city: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    district: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    number: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    state: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    street: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    zipCode: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    complement: {
+        type: DataTypes.STRING
+    }
+};
 
-export { addressAttributes };
+const options = {};

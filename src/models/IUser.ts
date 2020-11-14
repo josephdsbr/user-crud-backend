@@ -1,10 +1,12 @@
 import { BuildOptions, Model } from "sequelize";
+import { AddressAttributes } from "./IAddress";
 export interface UserAttributes {
   id?: number;
   name: string;
   email: string;
   phone: string;
   password: string;
+  address: AddressAttributes;
   createdAt?: Date;
   updatedAt?: Date;
 }

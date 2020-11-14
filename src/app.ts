@@ -4,7 +4,7 @@ import { dbConfig } from './entities';
 import { router } from './routes';
 
 dbConfig
-.authenticate()
+.sync()
 .then(() => console.log('Database Connected'))    
 .catch(err => console.error(err.message))
 
