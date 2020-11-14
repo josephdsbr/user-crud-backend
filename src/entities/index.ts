@@ -1,6 +1,6 @@
 import * as sequelize from 'sequelize';
 import { UserFactory } from './User';
-import options from '../config/database';
+import options from '../config/DatabaseConfig';
 import { AddressFactory } from './Address';
 
 export const dbConfig = new sequelize.Sequelize(options as sequelize.Options);
