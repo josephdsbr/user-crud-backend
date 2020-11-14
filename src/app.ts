@@ -1,6 +1,12 @@
 import express from 'express';
+
+import { dbConfig } from './entities';
 import { router } from './routes';
-import './database';
+
+dbConfig
+.authenticate()
+.then(() => console.log('Database Connected'))    
+.catch(err => console.error(err.message))
 
 const app = express();
 

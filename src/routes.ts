@@ -1,15 +1,17 @@
 import { Router, Request, Response } from 'express';
-import User from './entities/User';
-
+import { authUserController } from './useCases/AuthUser';
+import { createUserController } from './useCases/CreateUser';
+import { jwtAuthenticationMiddleware } from './middlewares/auth';
 const router = Router();
 
-router.post('/', async (req: Request, res: Response) => {
-    const user = await User.create({
-        email: 'josephdsbr@gmail.com',
-        name: 'José Vinícius Santos de Melo',
-        phone: '81997667754'
-    })
-    return res.json(user);
+router.post('/sign-in', async (req: Request, res: Response) => {
+    return authUserController.handle(req, res);
+})
+
+router.use(jwtAuthenticationMiddleware);
+
+router.post('/users', async (req: Request, res: Response) => {
+    return createUserController.handle(req, res);
 })
 
 export { router };

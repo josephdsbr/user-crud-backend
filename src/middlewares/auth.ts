@@ -1,4 +1,4 @@
-import {Request, Response, NextFunction} from 'express';
+import {Response, NextFunction} from 'express';
 import jwt from 'jsonwebtoken';
 import authConfig from '../config/auth';
 import { IGetUserAuthInfoRequest, ITokenObjects } from '../models/IToken';
@@ -6,7 +6,7 @@ import { IGetUserAuthInfoRequest, ITokenObjects } from '../models/IToken';
 const jwtAuthenticationMiddleware = (req: IGetUserAuthInfoRequest, res: Response, next: NextFunction) => {
     const authHeader = req.headers.authorization;
 
-    if (authHeader) {
+    if (!authHeader) {
         return res.status(401).send({ error: 'No token provided.' });
     }
 
@@ -29,3 +29,5 @@ const jwtAuthenticationMiddleware = (req: IGetUserAuthInfoRequest, res: Response
         return next();
     });
 }
+
+export { jwtAuthenticationMiddleware };

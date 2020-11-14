@@ -1142,9 +1142,9 @@ mkdirp@^1.0.4:
   integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
 
 moment-timezone@^0.5.31:
-  version "0.5.31"
-  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.31.tgz#9c40d8c5026f0c7ab46eda3d63e49c155148de05"
-  integrity sha512-+GgHNg8xRhMXfEbv81iDtrVeTcWt0kWmTEY1XQK14dICTXnWJnT0dxdlPspwqF3keKMVPXwayEsk1DI0AA/jdA==
+  version "0.5.32"
+  resolved "https://registry.yarnpkg.com/moment-timezone/-/moment-timezone-0.5.32.tgz#db7677cc3cc680fd30303ebd90b0da1ca0dfecc2"
+  integrity sha512-Z8QNyuQHQAmWucp8Knmgei8YNo28aLjJq6Ma+jy1ZSpSk5nyfRT8xgUbSQvD2+2UajISfenndwvFuH3NGS+nvA==
   dependencies:
     moment ">= 2.9.0"
 
@@ -2016,11 +2016,6 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
   integrity sha1-n5VxD1CiZ5R7LMwSR0HBAoQn5xM=
-
-uuid4@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/uuid4/-/uuid4-2.0.2.tgz#d33169f4a8fe84b217f50a0f28f971cd9ff56216"
-  integrity sha512-TzsQS8sN1B2m9WojyNp0X/3JL8J2RScnrAJnooNPL6lq3lA02/XdoWysyUgI6rAif0DzkkWk51N6OggujPy2RA==
 
 uuid@^8.1.0:
   version "8.3.1"

@@ -1,27 +1,52 @@
-import { DataTypes, Model, ModelAttributes } from "sequelize";
-import { UserAttributes } from "../models/IUser";
-import { CryptPassword } from "../utils/HashPasswordUtil";
+import { DataTypes, ModelAttributes, Sequelize } from 'sequelize';
+import { UserStatic } from '../models/IUser';
+import { CryptPassword } from '../utils/HashPasswordUtil';
 
-export default class User extends Model<UserAttributes> implements UserAttributes {
-    public email: string;
-    public password: string;
-    public hashedPassword: string;
-    public name: string;
-    public phone: string;
-
-    public readonly createdAt!: Date;
-    public readonly updatedAt!: Date;
+export function UserFactory (sequelize: Sequelize): UserStatic {
+    return <UserStatic> sequelize.define('users', attributes, options)
 }
 
-User.beforeCreate(user => {
-    user.hashedPassword = CryptPassword(user.password);
-})
-
-const userAttributes: ModelAttributes<User, UserAttributes> = {
-    email: DataTypes.STRING,
-    hashedPassword: DataTypes.STRING,
-    name: DataTypes.STRING,
-    phone: DataTypes.STRING
+const attributes: ModelAttributes = {
+    id: {
+        type: DataTypes.INTEGER,
+        autoIncrement: true,
+        primaryKey: true,
+    },
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+    },
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    phone: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    createdAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: DataTypes.NOW
+    },
+    updatedAt: {
+        type: DataTypes.DATE,
+        allowNull: false,
+        defaultValue: DataTypes.NOW
+    }
 }
 
-export { userAttributes };
+const options = {
+    hooks: {
+        async beforeSave(user) {
+            const password = user.getDataValue('password')
+            const encryptedPassword = await CryptPassword(password);
+            user.setDataValue('password', encryptedPassword);
+        }
+    }
+};
