@@ -3,7 +3,7 @@
 
 Tabela de Conteúdos
 ===================
-
+<!--ts-->
     * [Sobre](#Sobre)
     * [Tabela de Conteúdo](#tabela-de-conteudo)
     * [Instalação](#instalacao)
@@ -11,6 +11,7 @@ Tabela de Conteúdos
         * [Pre Requisitos](#pre-requisitos)
         * [Local Files](#remote-files)
     * [Tecnologias](#tecnoligas)
+<!--te-->
 
 <h4 align="center">Em Desenvolvimento</h4>
 
