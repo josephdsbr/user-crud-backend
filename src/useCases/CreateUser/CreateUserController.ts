@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { User, UserModel } from '../../models/IUser';
+import { UserModel } from '../../models/IUser';
 import { ICreateUserRequestDTO } from './CreateUserDTO';
 import { CreateUserUseCase } from './CreateUserUseCase';
 
