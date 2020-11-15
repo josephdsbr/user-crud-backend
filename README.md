@@ -21,9 +21,11 @@ Tabela de Conteúdos
 - [x] Consulta dos Detalhes do Usuário
 - [x] Atualização de Usuário
 
-### Pré-requisitos
+### [Pré-requisitos](#pre-requisito)
 
-Antes de começar você vai precisar ter instalado em sua máquina o NPM, Node.js
+Antes de começar você vai precisar ter instalado em sua máquina:
+- [Node.js](https://nodejs.org/en/)
+- Package Manager ([NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/))
 
 ### Instalação
 
@@ -42,6 +44,10 @@ $ npm install ou yarn
 ```
 
 ### [Como Usar](#como-usar)
+
+Antes de starta o projeto, será ter um banco de dados SQL ([Postgres](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), etc) e uma secret para o JWT.
+
+Essas informações deverão ser inseridas no arquivo `.env` considerando como exemplo as variáveis que estão no arquivo `.env.example`.
 
 ```bash
 # Execute a aplicação em modo de desenvolvimento
