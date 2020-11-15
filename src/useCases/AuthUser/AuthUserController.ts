@@ -12,9 +12,9 @@ export class AuthUserController {
         try {
             const params: IAuthUserDTO = request.body;
             const user: UserWithTokenModel = await this.authUserUseCase.execute(params);
-            return response.sendStatus(200).send(user);
+            return response.status(200).send(user);
         } catch (err) {
-            return response.sendStatus(400).json({ error: err.message || 'Unexpected Error' })
+            return response.status(400).json({ error: err.message || 'Unexpected Error' })
         }
     }
 }
