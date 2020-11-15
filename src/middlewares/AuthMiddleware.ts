@@ -1,6 +1,6 @@
 import {Response, NextFunction} from 'express';
 import jwt from 'jsonwebtoken';
-import authConfig from '../config/auth';
+import authConfig from '../config/AuthConfig';
 import { IGetUserAuthInfoRequest, ITokenObjects } from '../models/IToken';
 
 const jwtAuthenticationMiddleware = (req: IGetUserAuthInfoRequest, res: Response, next: NextFunction) => {

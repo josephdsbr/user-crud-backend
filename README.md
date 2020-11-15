@@ -3,7 +3,11 @@
 
 Tabela de Conteúdos
 ===================
+<<<<<<< HEAD
 
+=======
+<!--ts-->
+>>>>>>> ea3f33aa92415f61f5594ca60fbecee1cd2707fc
     * [Sobre](#Sobre)
     * [Tabela de Conteúdo](#tabela-de-conteudo)
     * [Instalação](#instalacao)
@@ -11,6 +15,10 @@ Tabela de Conteúdos
         * [Pre Requisitos](#pre-requisitos)
         * [Local Files](#remote-files)
     * [Tecnologias](#tecnoligas)
+<<<<<<< HEAD
+=======
+<!--te-->
+>>>>>>> ea3f33aa92415f61f5594ca60fbecee1cd2707fc
 
 <h4 align="center">Em Desenvolvimento</h4>
 

@@ -1,7 +1,6 @@
 import { BuildOptions, Model } from "sequelize";
 export interface AddressAttributes {
     id?: number;
-    userId: number;
     street: string;
     number: string;
     complement?: string;

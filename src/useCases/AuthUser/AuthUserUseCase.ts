@@ -2,7 +2,7 @@ import { UserModel, UserWithTokenModel } from "../../models/IUser";
 import { IUserRepository } from "../../repositories/IUserRepository";
 import { ComparePassword } from "../../utils/HashPasswordUtil";
 import { IAuthUserDTO } from "./AuthUserDTO";
-import authConfig from '../../config/auth'
+import authConfig from '../../config/AuthConfig'
 import { GenerateToken } from "../../utils/JwtUtil";
 
 export class AuthUserUseCase {
@@ -27,6 +27,6 @@ export class AuthUserUseCase {
 
         const token = await GenerateToken({ id: user.id }, authConfig.secret);
 
-        return { email: user.email, name: user.name, phone: user.phone, token, createdAt: user.createdAt, updatedAt: user.updatedAt };
+        return { email: user.email, name: user.name, phone: user.phone, token, createdAt: user.createdAt, updatedAt: user.updatedAt, address: user.address };
     }
 }
