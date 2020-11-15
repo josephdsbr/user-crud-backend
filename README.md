@@ -25,7 +25,8 @@ Tabela de Conteúdos
 
 Antes de começar você vai precisar ter instalado em sua máquina:
 - [Node.js](https://nodejs.org/en/)
-- Package Manager ([NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/))
+- Um Package Manager ([NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/))
+- [Git](https://git-scm.com/)
 
 ### Instalação
 
@@ -45,16 +46,16 @@ $ npm install ou yarn
 
 ### [Como Usar](#como-usar)
 
-Antes de starta o projeto, será ter um banco de dados SQL ([Postgres](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), etc) e uma secret para o JWT.
+Antes de startar o projeto, será necessário ter um banco de dados SQL ([Postgres](https://www.postgresql.org/), [MySQL](https://www.mysql.com/), etc) e uma secret para o JWT.
 
-Essas informações deverão ser inseridas no arquivo `.env` considerando como exemplo as variáveis que estão no arquivo `.env.example`.
+Essas informações deverão ser inseridas no arquivo `.env` considerando, como exemplo, as variáveis que estão no arquivo `.env.example`.
 
 ```bash
 # Execute a aplicação em modo de desenvolvimento
 
 $ npm run start
 
-# O servidor iniciará na porta 3000 - acesse <http://localhost:3000>
+# Por padrão, o servidor está configurado para inicar na porta 3000, contudo isto pode ser configurado alterando a variável PORT no arquivo `.env` - acesse <http://localhost:3000>
 ```
 
 ### Tecnologias
