@@ -1,14 +1,15 @@
-<h1 align="center">Nome do Projeto</h1>
-<p align="center">Escrever uma breve descrição</p>
+<h1 align="center">CRUD de Usuário</h1>
+<p align="center">Projeto desenvolvido para ser utilizado como base para o processo de cadastramento, consulta e gerenciamento de usuários.</p>
 
 Tabela de Conteúdos
 ===================
 <p align="center">
-    <a href="#sobre">Sobre</a>
-    <a href="#tabela-de-conteudo">Tabela de Conteúdo</a>
+    <a href="#features">Features</a>
+    <a href="#pre-requisito">Pré-requisito</a>
     <a href="#instalacao">Instalação</a>
     <a href="#como-usar">Como usar</a>
     <a href="#tecnologias">Tecnologias</a>
+    <a href="#autor">Autor</a>
 </p>
 
 <h4 align="center">Em Desenvolvimento</h4>
@@ -24,19 +25,25 @@ Tabela de Conteúdos
 
 Antes de começar você vai precisar ter instalado em sua máquina o NPM, Node.js
 
+### Instalação
+
 ```bash
 # Clone do Repositório
 
-$ git clone <>
+$ git clone <https://github.com/josephdsbr/user-crud-backend.git>
 
 # Acesse a pasta do projeto no terminal/cmd
 
-cd user-crud-trinity
+cd user-crud-backend
 
 # Instale as dependências
 
 $ npm install ou yarn
+```
 
+### Como Usar
+
+```bash
 # Execute a aplicação em modo de desenvolvimento
 
 $ npm run start
@@ -48,11 +55,11 @@ $ npm run start
 
 As seguintes ferramentes foram usadas na construção do projeto;
 
-- [Express]()
-- [Typescript]()
-- [Sequelize]()
-- [JWT]()
-- [YUP]()
+- [Express](https://expressjs.com/pt-br/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Sequelize](https://sequelize.org/)
+- [JWT](https://jwt.io/)
+- [YUP](https://github.com/jquense/yup)
 
 ### Autor
 ---
