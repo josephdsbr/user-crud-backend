@@ -55,6 +55,10 @@ Antes de startar o projeto, será necessário ter um banco de dados SQL ([Postgr
 Essas informações deverão ser inseridas no arquivo `.env` considerando, como exemplo, as variáveis que estão no arquivo `.env.example`.
 
 ```bash
+# Executar o sequelize para criar o banco de dados, caso ainda não exista.
+
+$ npx sequelize db:create
+
 # Execute a aplicação em modo de desenvolvimento
 
 $ npm run start
