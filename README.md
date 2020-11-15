@@ -12,17 +12,18 @@ Tabela de Conteúdos
     <a href="#autor">Autor</a>
 </p>
 
-<h4 align="center">Em Desenvolvimento</h4>
+<h4 align="center">Em Desenvolvimento.</h4>
 
 ### Features
 
-- [x] Implementação e Configuração do Sequelize
-- [x] Autenticação via JWT
-- [x] Cadastro de Usuário
-- [x] Consulta dos Detalhes do Usuário
-- [x] Atualização de Usuário
-- [x] Implementação dos Validadores de Dados
-- [ ] Implementação dos Testes Unitários
+- [x] Implementação e Configuração do Sequelize.
+- [x] Autenticação via JWT.
+- [x] Cadastro de Usuário.
+- [x] Consulta dos Detalhes do Usuário.
+- [x] Atualização de Usuário.
+- [x] Implementação dos Validadores de Dados.
+- [ ] Implementação dos Testes Unitários.
+
 
 ### [Pré-requisitos](#pre-requisito)
 
