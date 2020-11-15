@@ -3,15 +3,13 @@
 
 Tabela de Conteúdos
 ===================
-<!--ts-->
-    * [Sobre](#Sobre)
-    * [Tabela de Conteúdo](#tabela-de-conteudo)
-    * [Instalação](#instalacao)
-    * [Como usar](#como-usar)
-        * [Pre Requisitos](#pre-requisitos)
-        * [Local Files](#remote-files)
-    * [Tecnologias](#tecnoligas)
-<!--te-->
+<p align="center">
+    <a href="#sobre">Sobre</a>
+    <a href="#tabela-de-conteudo">Tabela de Conteúdo</a>
+    <a href="#instalacao">Instalação</a>
+    <a href="#como-usar">Como usar</a>
+    <a href="#tecnologias">Tecnologias</a>
+</p>
 
 <h4 align="center">Em Desenvolvimento</h4>
 
