@@ -16,10 +16,13 @@ Tabela de Conteúdos
 
 ### Features
 
+- [x] Implementação e Configuração do Sequelize
 - [x] Autenticação via JWT
 - [x] Cadastro de Usuário
 - [x] Consulta dos Detalhes do Usuário
 - [x] Atualização de Usuário
+- [x] Implementação dos Validadores de Dados
+- [] Implementação dos Testes Unitários
 
 ### [Pré-requisitos](#pre-requisito)
 
