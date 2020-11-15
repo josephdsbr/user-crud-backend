@@ -14,7 +14,7 @@ export class AuthUserController {
             const user: UserWithTokenModel = await this.authUserUseCase.execute(params);
             return response.status(200).send(user);
         } catch (err) {
-            return response.status(400).json({ error: err.message || 'Unexpected Error' })
+            return response.status(200).json({ error: err.message || 'Unexpected Error' })
         }
     }
 }
