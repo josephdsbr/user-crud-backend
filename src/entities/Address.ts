@@ -1,5 +1,5 @@
 import { DataTypes, ModelAttributes, Sequelize } from 'sequelize';
-import { AddressAttributes, AddressStatic } from '../models/IAddress';
+import { AddressStatic } from '../models/IAddress';
 
 export function AddressFactory (sequelize: Sequelize): AddressStatic {
     return<AddressStatic> sequelize.define('addresses', attributes , options);
