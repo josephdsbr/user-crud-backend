@@ -71,13 +71,13 @@ As seguintes ferramentes foram usadas na construção do projeto;
 ### Autor
 ---
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href="https://github.com/josephdsbr">
  <img style="border-radius: 50%;" src="https://avatars1.githubusercontent.com/u/42288345?s=460&u=3173ac53eabc99366999615e7a2623bcb6b1560f&v=4" width="100px;" alt=""/>
  <br />
- <sub><b>José Vinícius Santos de Melo</b></sub></a> <a href="https://github.com/josephdsbr" title="Rocketseat">🚀</a>
+ <sub><b>José Vinícius Santos de Melo</b></sub></a> <a href="https://github.com/josephdsbr" title="Josephdsbr">🚀</a>
 
 Feito com ❤️ por José Vinícius 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/josephdsbr/)](https://www.linkedin.com/in/josephdsbr/) 
-
-[![Gmail Badge](https://img.shields.io/badge/-tgmarinho@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:josephdsbr@gmail.com)](mailto:josephdsbr@gmail.com)
+* **Instagram** - [@pajebr](https://www.instagram.com/pajebr/)
+* **Linkedin** -  [josephdsbr](https://www.linkedin.com/in/josephdsbr)
+* **GitHub** - [josephdsbr](https://github.com/josephdsbr)
