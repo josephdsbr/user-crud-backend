@@ -22,7 +22,7 @@ Tabela de Conteúdos
 - [x] Consulta dos Detalhes do Usuário
 - [x] Atualização de Usuário
 - [x] Implementação dos Validadores de Dados
-- [] Implementação dos Testes Unitários
+- [ ] Implementação dos Testes Unitários
 
 ### [Pré-requisitos](#pre-requisito)
 
