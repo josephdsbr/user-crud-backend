@@ -41,7 +41,7 @@ cd user-crud-backend
 $ npm install ou yarn
 ```
 
-### Como Usar
+### [Como Usar](#como-usar)
 
 ```bash
 # Execute a aplicação em modo de desenvolvimento
