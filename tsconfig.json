@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "outDir": "./built",
     "target": "es2017",
     "module": "commonjs",
     "strict": false,
@@ -10,10 +11,10 @@
     "sourceMap": true
   },
   "include": [
-    "src/**/*.ts", "src/config/database.js",
+    "src/**/*.ts", "src/config/database.js"
   ],
   "exclude": [
     "src/**/*.js",
-    "./build/**/*"
+    "./built/**/*"
   ]
 }

@@ -14,11 +14,11 @@ router.post('/sign-in', async (req: Request, res: Response) => {
     return authUserController.handle(req, res);
 })
 
-router.use(jwtAuthenticationMiddleware);
-
 router.post('/users', validateSchema(createUserValidator),  async (req: Request, res: Response) => {
     return createUserController.handle(req, res);
 })
+
+router.use(jwtAuthenticationMiddleware);
 
 router.get('/users/:id', async (req: Request, res: Response) => {
     return userDetailsController.handle(req, res);
