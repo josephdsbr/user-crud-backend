@@ -4,11 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
-    "start:prod": "node ./dist/server.js",
+    "start:ts": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+    "start": "node ./dist/server.js",
     "sequelize:start": "sequelize db:create",
-    "build": "tsc --project tsconfig.json",
-    "build:prod": "tsc --project tsconfig.production.json",
+    "build": "tsc --project tsconfig.production.json",
     "clean": "tsc --build --clean"
   },
   "dependencies": {
