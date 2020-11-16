@@ -4,6 +4,7 @@
 Tabela de Conteúdos
 ===================
 <p align="center">
+    <a href="#informacoes">Informações</a>
     <a href="#features">Features</a>
     <a href="#pre-requisito">Pré-requisito</a>
     <a href="#instalacao">Instalação</a>
@@ -13,6 +14,10 @@ Tabela de Conteúdos
 </p>
 
 <h4 align="center">Em Desenvolvimento.</h4>
+
+### Informações
+
+Esta api está hospeada neste [link](https://crud-user-example.herokuapp.com) e sua documentação está na pasta `github/files/user-crud-insomnia.json`. Caso você não utilize o Insominia, pode utilizar o [API Transfomer](https://www.apimatic.io/transformer/) para realizar a conversão para outro REST Client.
 
 ### Features
 
